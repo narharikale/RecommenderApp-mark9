@@ -1,0 +1,22 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  margin: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+button {
+  margin: 1rem;
+  width: 120px;
+  height: 40px;
+}
+
+li {
+  text-decoration: none;
+  display: block;
+  border: 3px solid;
+  height: 40px;
+  margin: 10px;
+}
