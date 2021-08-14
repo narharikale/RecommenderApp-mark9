@@ -8,15 +8,18 @@ var channelsDB = {
       desc: "It introduce you to great people in world",
       rating: "3/5"
     },
-    { name: "The ranveer show", desc: "Best indian podcast", rating: "5/5" }
+    { name: "The ranveer show", desc: "Best indian podcast", rating: "5/5" },
+    { name: "Ted Talks", desc: "For new ideas and innovation", rating: "4.5/5" }
   ],
   Vlog: [
     { name: "Ankit Bhatia", desc: "Amazing videography", rating: "5/5" },
-    { name: "Jeevan Kadam vlogs", desc: "Best in marathi", rating: "4/5" }
+    { name: "Jeevan Kadam vlogs", desc: "Best in marathi", rating: "4/5" },
+    { name: "BB ki vines", desc: "Comedy", rating: "4.5/5" }
   ],
   News: [
-    { name: "BBC Marathi", desc: "Best for global news", rating: "4.6/5" },
-    { name: "Wion News", desc: "My personal favourite", rating: "5/5" }
+    { name: "BBC News", desc: "Best for global news", rating: "4.6/5" },
+    { name: "Wion News", desc: "My personal favourite", rating: "5/5" },
+    { name: "Abp Maza", desc: "Best Marathi", rating: "3/5" }
   ]
 };
 
@@ -46,7 +49,10 @@ export default function App() {
       <div>
         {Object.keys(channelsDB).map((chcategory) => {
           return (
-            <button onClick={() => onclickHandler(chcategory)}>
+            <button
+              style={{ borderRadius: "10px" }}
+              onClick={() => onclickHandler(chcategory)}
+            >
               {chcategory}
             </button>
           );
@@ -60,7 +66,9 @@ export default function App() {
             style={{
               listStyle: "none",
               padding: "1rem",
-              border: "1px solid rgb(209, 213, 219)",
+              border: "1px solid #54ea45",
+              boxShadow: " #4a5444 7px 6px 6px 1px",
+              borderRadius: "5px",
               width: "100%",
               margin: "1rem 0rem"
             }}
