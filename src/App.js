@@ -3,16 +3,20 @@ import "./styles.css";
 
 var channelsDB = {
   Podcast: [
-    { name: "Joe rogan exeperience", rating: "3/5" },
-    { name: "The ranveer show", rating: "5/5" }
+    {
+      name: "Joe rogan exeperience",
+      desc: "It introduce you to great people in world",
+      rating: "3/5"
+    },
+    { name: "The ranveer show", desc: "Best indian podcast", rating: "5/5" }
   ],
   Vlog: [
-    { name: "Ankit Bhatia", rating: "5/5" },
-    { name: "Jeevan Kadam vlogs", rating: "4/5" }
+    { name: "Ankit Bhatia", desc: "Amazing videography", rating: "5/5" },
+    { name: "Jeevan Kadam vlogs", desc: "Best in marathi", rating: "4/5" }
   ],
   News: [
-    { name: "BBC Marathi", rating: "4.6/5" },
-    { name: "Wion News", rating: "5/5" }
+    { name: "BBC Marathi", desc: "Best for global news", rating: "4.6/5" },
+    { name: "Wion News", desc: "My personal favourite", rating: "5/5" }
   ]
 };
 
@@ -62,7 +66,8 @@ export default function App() {
             }}
           >
             <div style={{ textAlign: "left" }}>{channel.name} </div>
-            <div style={{ textAlign: "left" }}>{channel.rating}</div>
+            <div style={{ textAlign: "left" }}>Desc: {channel.desc}</div>
+            <div style={{ textAlign: "left" }}>Rating: {channel.rating}</div>
           </li>
         ))}
       </ul>
