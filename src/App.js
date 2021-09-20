@@ -83,9 +83,3 @@ export default function App() {
   );
 }
 
-// Object.keys(bookDB).map((genre)     {bookDB[selectedGenre].map((book)
-// const bookDB = {
-// javascript: [
-//   { name: "Eloquent JavaScript", rating: "4/5" },
-//   { name: "You Don't Know JS", rating: "3.5/5" }
-// ],
